@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/application/application.iml" filepath="$PROJECT_DIR$/application/application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/bomtada.iml" filepath="$PROJECT_DIR$/.idea/bomtada.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/boot-camp-gateway.iml" filepath="$PROJECT_DIR$/gateway/boot-camp-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/insurance/insurance.iml" filepath="$PROJECT_DIR$/insurance/insurance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mypage/mypage.iml" filepath="$PROJECT_DIR$/mypage/mypage.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,66 @@
+server:
+  port: 8088
+
+---
+
+spring:
+  profiles: default
+  cloud:
+    gateway:
+      routes:
+        - id: application
+          uri: http://localhost:8081
+          predicates:
+            - Path=/members/**,/claims/**
+        - id: insurance
+          uri: http://localhost:8082
+          predicates:
+            - Path=/humanResources/,**/payments/**
+        - id: mypage
+          uri: http://localhost:8083
+          predicates:
+            - Path= /dashboards/**
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+
+
+---
+
+spring:
+  profiles: docker
+  cloud:
+    gateway:
+      routes:
+        - id: application
+          uri: http://application:8080
+          predicates:
+            - Path=/members/**,/claims/**
+        - id: insurance
+          uri: http://insurance:8080
+          predicates:
+            - Path=/humanResources/**,/payments/**
+        - id: mypage
+          uri: http://mypage:8080
+          predicates:
+            - Path= /dashboards/**
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+
+server:
+  port: 8080

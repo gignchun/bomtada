@@ -1,0 +1,11 @@
+bomtada\Requested.class
+bomtada\AbstractEvent.class
+bomtada\Registered.class
+bomtada\AbstractEvent$1.class
+bomtada\PolicyHandler.class
+bomtada\config\kafka\KafkaProcessor.class
+bomtada\Dashboard.class
+bomtada\DashboardViewHandler.class
+bomtada\Processed.class
+bomtada\MypageApplication.class
+bomtada\DashboardRepository.class
